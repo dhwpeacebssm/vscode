@@ -37,12 +37,16 @@ int main(){
     printf("추가 강화 수치를 입력하세요.\n");
     scanf("%d", &plus);
     n4->data = 40+plus;
-    printf("%d\n", n1);
-    int all = n1;
-    printf("%d\n", n2);
-    all =all+n2;
-    printf("%d\n", n4);
-    all = all+n3;
+    printf("%d\n", n1->data);
+    printf("%d\n", n2->data);
+    printf("%d\n", n4->data);
+    int all = n1->data + n2->data + n4 -> data;
+    free(n1);
+    free(n3);
+    free(n4);
+    free(n5);
+    free(n2);
+
 
     
     printf("태양검 최종 공격 루트 공격력 합계: %d", all);
